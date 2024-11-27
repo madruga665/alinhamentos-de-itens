@@ -1,42 +1,81 @@
 * {
-    padding: 0;
-    margin: 0;
-    border: 0;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  min-width: 100vw;
+}
+
+.container-flex-itens {
+  height: 500px;
+  position: relative;
+	border: 20px solid black;
+	margin: 20px 0;
 }
 
 .base {
-    width: 200px;
-    height: 200px;
-    text-align: center;
-    line-height: 200px;
-    text-transform: uppercase;
-    display: inline-block;
+  width: 200px;
+  height: 200px;
+  text-align: center;
+  line-height: 200px;
+  text-transform: uppercase;
+  display: inline-block;
 }
 
 .vermelha {
-    background-color: red;
-    position: absolute;
+  background-color: red;
+  position: absolute;
 }
 .marron {
-    background-color: brown;
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
+  background-color: brown;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
 }
 .verde {
-    background-color: darkgreen;
-    position: absolute;
-    right: 0;
+  background-color: darkgreen;
+  position: absolute;
+  right: 0;
 }
 .filho {
-    background-color: aqua;
-    width: 100px;
-    height: 100px;
-    text-align: center;
-    line-height: 100px;
-    position: relative;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50% , -50%);
+  background-color: aqua;
+  width: 100px;
+  height: 100px;
+  text-align: center;
+  line-height: 100px;
+  position: relative;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
 }
+
+h2 {
+  color: black;
+}
+
+.container-grid-itens {
+	display: grid;
+  grid-template-columns: 1fr 1fr 160px;
+	grid-template-rows: 100px 100px;
+	gap: 20px;
+	background-color: black;
+	border: 20px solid black;
+	margin: 20px 0;
+}
+
+.grid-item {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: chocolate;
+	color: aliceblue;
+	font-size: 40px;
+	font-weight: 900;
+}
+
